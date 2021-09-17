@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tus-Dx-0xN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Multimedia-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Multimedia_and_WebView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-hu-jre">
+                                <rect key="frame" x="109" y="84" width="196" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwo-tR-Bqh">
+                                        <rect key="frame" x="0.0" y="1.5" width="50" height="46.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="dZl-49-Clu"/>
+                                            <constraint firstAttribute="height" constant="50" id="nXr-sc-QNK"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="play.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="btnPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Khq-4V-6Ab"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46L-Ak-fQC">
+                                        <rect key="frame" x="73" y="2" width="50" height="46"/>
+                                        <state key="normal" backgroundImage="pause.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="btnPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lC3-ZG-B16"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLB-Sa-AoD">
+                                        <rect key="frame" x="146" y="2" width="50" height="46"/>
+                                        <state key="normal" backgroundImage="stop.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="btnStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e8U-fs-Mtv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RLB-Sa-AoD" firstAttribute="width" secondItem="46L-Ak-fQC" secondAttribute="width" id="FG1-5S-t6R"/>
+                                    <constraint firstItem="46L-Ak-fQC" firstAttribute="width" secondItem="xwo-tR-Bqh" secondAttribute="width" id="IRG-zh-Bvk"/>
+                                    <constraint firstItem="RLB-Sa-AoD" firstAttribute="height" secondItem="46L-Ak-fQC" secondAttribute="height" id="SA6-s5-WHT"/>
+                                    <constraint firstItem="46L-Ak-fQC" firstAttribute="height" secondItem="xwo-tR-Bqh" secondAttribute="height" id="ju6-6q-ajb"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cq-zy-Gf7">
+                                <rect key="frame" x="182" y="175" width="50" height="47.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="CPW-6O-NIp"/>
+                                    <constraint firstAttribute="height" constant="50" id="upP-fQ-twI"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="film.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="btnMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D9N-dO-Gtb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4cq-zy-Gf7" firstAttribute="top" secondItem="kAe-hu-jre" secondAttribute="bottom" constant="40" id="HW1-Fa-J3a"/>
+                            <constraint firstItem="4cq-zy-Gf7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rc6-ql-GxB"/>
+                            <constraint firstItem="kAe-hu-jre" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XhB-0V-BAr"/>
+                            <constraint firstItem="kAe-hu-jre" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="hwz-jJ-8ZJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Multimedia" id="Yvy-Mb-pQm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="-273"/>
+        </scene>
+        <!--Web-->
+        <scene sceneID="Jw2-og-4b1">
+            <objects>
+                <viewController id="OaO-CL-ubM" customClass="WebViewController" customModule="Multimedia_and_WebView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i5e-TO-dCO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7J-m5-AEd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qBA-MK-sUi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n7J-m5-AEd" firstAttribute="leading" secondItem="qBA-MK-sUi" secondAttribute="leading" id="Rkp-ns-hZY"/>
+                            <constraint firstItem="n7J-m5-AEd" firstAttribute="top" secondItem="qBA-MK-sUi" secondAttribute="top" id="iMo-IX-zFs"/>
+                            <constraint firstItem="n7J-m5-AEd" firstAttribute="bottom" secondItem="qBA-MK-sUi" secondAttribute="bottom" id="rqx-Pr-Xww"/>
+                            <constraint firstItem="n7J-m5-AEd" firstAttribute="trailing" secondItem="qBA-MK-sUi" secondAttribute="trailing" id="xUR-4B-Kpt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Web" id="gpz-kR-I68"/>
+                    <connections>
+                        <outlet property="webView" destination="n7J-m5-AEd" id="y4J-tH-B5L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="trL-nI-Qya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="429"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="87W-p4-e2G">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tus-Dx-0xN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yQW-Pk-ehX">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="jx5-9r-Ybw"/>
+                        <segue destination="OaO-CL-ubM" kind="relationship" relationship="viewControllers" id="0iF-ds-DBM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dtq-Ta-iWB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="film.fill" catalog="system" width="128" height="93"/>
+        <image name="pause.fill" catalog="system" width="116" height="128"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="stop.fill" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
